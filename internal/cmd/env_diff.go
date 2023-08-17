@@ -25,6 +25,7 @@ var IgnoredKeys = map[string]bool{
 	"SHELLOPTS": true,
 	"SHLVL":     true,
 	"_":         true,
+	"XPC_SERVICE_NAME": true,
 }
 
 // EnvDiff represents the diff between two environments

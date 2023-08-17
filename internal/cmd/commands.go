@@ -46,7 +46,9 @@ var CmdList []*Cmd
 func init() {
 	CmdList = []*Cmd{
 		CmdAllow,
+		CmdAllowed,
 		CmdApplyDump,
+		CmdApplyExport,
 		CmdShowDump,
 		CmdDeny,
 		CmdDotEnv,
@@ -59,6 +61,7 @@ func init() {
 		CmdHook,
 		CmdPrune,
 		CmdReload,
+		CmdRevert,
 		CmdStatus,
 		CmdStdlib,
 		CmdVersion,

@@ -54,7 +54,7 @@ nope
 .SH SETUP
 .PP
 For direnv to work properly it needs to be hooked into the shell. Each shell
-has it's own extension mechanism:
+has its own extension mechanism:
 
 .SS BASH
 .PP
@@ -147,6 +147,19 @@ and add the following line to your \fB\fC~/.elvish/rc.elv\fR file:
 
 .nf
 use direnv
+
+.fi
+.RE
+
+.SS PowerShell
+.PP
+Add the following line at the end of the \fB\fC$PROFILE\fR:
+
+.PP
+.RS
+
+.nf
+Invoke-Expression "$(direnv hook pwsh)"
 
 .fi
 .RE
